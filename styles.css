@@ -2,72 +2,86 @@
 /*
 COLOR PALETTE
 -------------------------
-Cream: #F6F1E9
-Dark Green: #304D3A
-Sage Green: #8FAF9A
-Brown: #765548
+Cream: #F5F1E8
+Dark Green: #263D32
+Sage Green: #9CAF9A
+Warm Brown: #765548
+Light Sage: #E2E9E0
 White: #FFFFFF
 */
 
 /* Styles the overall page */
 body {
-    background-color: #F6F1E9;
-    color: #304D3A;
+    background-color: #F5F1E8;
+    color: #263D32;
     font-family: Arial, sans-serif;
     margin: 0;
+    padding: 0;
 }
 
-/* Controls the main content area */
+/* Creates the main container for the About page */
 .about-container {
-    max-width: 750px;
+    max-width: 800px;
     margin: 60px auto;
-    padding: 30px;
+    padding: 40px;
+    background-color: #FFFFFF;
+    border-radius: 12px;
 }
 
 /* Styles the main heading */
 h1 {
-    color: #304D3A;
+    color: #263D32;
     text-align: center;
-    font-size: 40px;
-    margin-bottom: 40px;
+    font-size: 42px;
+    margin-bottom: 35px;
 }
 
 /* Styles the section headings */
 h2 {
     color: #765548;
-    margin-top: 30px;
+    font-size: 26px;
+    margin-top: 35px;
+    margin-bottom: 15px;
 }
 
 /* Styles the paragraphs */
 p {
-    color: #304D3A;
+    color: #263D32;
     font-size: 17px;
     line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+/* Styles the profile picture */
+.profile-image {
+    display: block;
+    width: 190px;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0 auto 35px;
+    border: 5px solid #9CAF9A;
+}
+
+/* Creates a section for the social media links */
+.links {
+    margin-top: 25px;
+    text-align: center;
 }
 
 /* Styles the social media links */
-.links {
-    margin-top: 20px;
-}
-
 .links a {
-    color: #765548;
-    font-weight: bold;
+    display: inline-block;
+    color: #FFFFFF;
+    background-color: #765548;
     text-decoration: none;
-    margin-right: 25px;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 6px;
 }
 
-/* Changes the link color when the mouse is over it */
+/* Changes the link appearance when the mouse is over it */
 .links a:hover {
-    color: #8FAF9A;
+    background-color: #9CAF9A;
+    color: #263D32;
 }
-
-.profile-image {
-    display: block;
-    width: 180px;
-    height: 180px;
-    object-fit: cover;
-    border-radius: 50%;
-    margin: 0 auto 30px;
-}
-
