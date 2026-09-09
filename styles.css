@@ -1,0 +1,73 @@
+
+/*
+COLOR PALETTE
+-------------------------
+Cream: #F6F1E9
+Dark Green: #304D3A
+Sage Green: #8FAF9A
+Brown: #765548
+White: #FFFFFF
+*/
+
+/* Styles the overall page */
+body {
+    background-color: #F6F1E9;
+    color: #304D3A;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+/* Controls the main content area */
+.about-container {
+    max-width: 750px;
+    margin: 60px auto;
+    padding: 30px;
+}
+
+/* Styles the main heading */
+h1 {
+    color: #304D3A;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+/* Styles the section headings */
+h2 {
+    color: #765548;
+    margin-top: 30px;
+}
+
+/* Styles the paragraphs */
+p {
+    color: #304D3A;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+/* Styles the social media links */
+.links {
+    margin-top: 20px;
+}
+
+.links a {
+    color: #765548;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 25px;
+}
+
+/* Changes the link color when the mouse is over it */
+.links a:hover {
+    color: #8FAF9A;
+}
+
+.profile-image {
+    display: block;
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0 auto 30px;
+}
+
