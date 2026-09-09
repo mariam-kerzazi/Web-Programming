@@ -1,0 +1,87 @@
+
+/*
+COLOR PALETTE
+-------------------------
+Cream: #F5F1E8
+Dark Green: #263D32
+Sage Green: #9CAF9A
+Warm Brown: #765548
+Light Sage: #E2E9E0
+White: #FFFFFF
+*/
+
+/* Styles the overall page */
+body {
+    background-color: #F5F1E8;
+    color: #263D32;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Creates the main container for the About page */
+.about-container {
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 40px;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+}
+
+/* Styles the main heading */
+h1 {
+    color: #263D32;
+    text-align: center;
+    font-size: 42px;
+    margin-bottom: 35px;
+}
+
+/* Styles the section headings */
+h2 {
+    color: #765548;
+    font-size: 26px;
+    margin-top: 35px;
+    margin-bottom: 15px;
+}
+
+/* Styles the paragraphs */
+p {
+    color: #263D32;
+    font-size: 17px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+/* Styles the profile picture */
+.profile-image {
+    display: block;
+    width: 190px;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0 auto 35px;
+    border: 5px solid #9CAF9A;
+}
+
+/* Creates a section for the social media links */
+.links {
+    margin-top: 25px;
+    text-align: center;
+}
+
+/* Styles the social media links */
+.links a {
+    display: inline-block;
+    color: #FFFFFF;
+    background-color: #765548;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 6px;
+}
+
+/* Changes the link appearance when the mouse is over it */
+.links a:hover {
+    background-color: #9CAF9A;
+    color: #263D32;
+}
