@@ -1,1 +1,483 @@
+/* =========================================
+   PERSONAL COLOR PALETTE
+   ========================================= */
 
+/*
+   The website uses an earthy, dark color palette
+   inspired by burgundy, olive green, chocolate,
+   caramel, and warm cream tones.
+
+   Black Olive:     #292E1E
+   Deep Maroon:     #4A1018
+   Burgundy:        #650D1A
+   Chocolate:       #4A3027
+   Muted Olive:     #59633A
+   Tiramisu Brown:  #6A4737
+   Warm Cream:      #F1E8D8
+   Soft Ivory:      #FAF7F0
+*/
+
+/* =========================================
+   GENERAL PAGE STYLING
+   ========================================= */
+
+/* Removes the browser's default margin and
+   sets the overall appearance of the website. */
+   body {
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+
+    /* Warm cream background */
+    background-color: #F1E8D8;
+
+    /* Dark olive text */
+    color: #292E1E;
+
+    line-height: 1.7;
+}
+
+
+/* Makes headings slightly tighter than
+   the paragraph text. */
+h1,
+h2,
+h3 {
+    line-height: 1.2;
+}
+
+
+/* =========================================
+   NAVIGATION
+   ========================================= */
+
+/* Uses Flexbox to place the website name
+   and navigation links in one row. */
+.navbar {
+    display: flex;
+
+    /* Places the name on the left and
+       links on the right. */
+    justify-content: space-between;
+
+    /* Vertically centers the items. */
+    align-items: center;
+
+    padding: 22px 55px;
+
+    /* Black olive creates the dark
+       editorial look from the moodboard. */
+    background-color: #292E1E;
+
+    color: #F1E8D8;
+}
+
+
+/* Styles the name in the navigation bar. */
+.navbar h2 {
+    margin: 0;
+
+    letter-spacing: 1px;
+}
+
+
+/* Uses Flexbox to place navigation
+   links beside each other. */
+.nav-links {
+    display: flex;
+
+    /* Adds space between each link. */
+    gap: 30px;
+}
+
+
+/* Styles each navigation link. */
+.nav-links a {
+    color: #F1E8D8;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+
+/* Changes the navigation link when
+   the user hovers over it. */
+.nav-links a:hover {
+    color: #C8B88A;
+}
+
+
+/* =========================================
+   HOME PAGE
+   ========================================= */
+
+/* Creates the main content area. */
+.home-container {
+    max-width: 1050px;
+
+    margin: 55px auto;
+
+    padding: 35px;
+}
+
+
+/* Creates the main hero section. */
+.hero {
+    display: flex;
+
+    /* Vertically centers the content. */
+    align-items: center;
+
+    min-height: 480px;
+
+    padding: 60px;
+
+    /* Soft ivory creates contrast
+       against the cream background. */
+    background-color: #FAF7F0;
+
+    /* Deep maroon accent along the top. */
+    border-top: 7px solid #4A1018;
+
+    border-radius: 4px;
+
+    box-shadow: 0 8px 20px rgba(41, 46, 30, 0.15);
+}
+
+
+/* Controls the width of the introduction. */
+.hero-text {
+    max-width: 720px;
+}
+
+
+/* Main heading on the home page. */
+.hero-text h1 {
+    font-size: 52px;
+
+    margin-bottom: 10px;
+
+    /* Burgundy heading */
+    color: #650D1A;
+
+    letter-spacing: -1px;
+}
+
+
+/* Secondary heading on the home page. */
+.hero-text h2 {
+    font-weight: normal;
+
+    color: #4A3027;
+}
+
+
+/* Creates a button-style link. */
+.button {
+    display: inline-block;
+
+    margin-top: 20px;
+
+    padding: 12px 24px;
+
+    /* Deep maroon button */
+    background-color: #4A1018;
+
+    color: #F1E8D8;
+
+    text-decoration: none;
+
+    border-radius: 3px;
+
+    font-weight: bold;
+}
+
+
+/* Changes the button when hovered over. */
+.button:hover {
+    background-color: #292E1E;
+}
+
+
+/* =========================================
+   ABOUT ME PAGE
+   ========================================= */
+
+/* Creates the main About Me content area. */
+.about-container {
+    max-width: 900px;
+
+    margin: 55px auto;
+
+    padding: 50px;
+
+    background-color: #FAF7F0;
+
+    border-radius: 4px;
+
+    box-shadow: 0 8px 20px rgba(41, 46, 30, 0.15);
+}
+
+
+/* Centers the main About Me heading. */
+.about-container > h1 {
+    text-align: center;
+
+    margin-bottom: 35px;
+
+    color: #650D1A;
+
+    font-size: 42px;
+}
+
+
+/* Styles the profile picture. */
+.profile-image {
+    display: block;
+
+    width: 220px;
+    height: 220px;
+
+    /* Keeps the image from becoming distorted. */
+    object-fit: cover;
+
+    /* Creates a circular image. */
+    border-radius: 50%;
+
+    /* Centers the image. */
+    margin: 0 auto 35px;
+
+    /* Muted olive border. */
+    border: 6px solid #59633A;
+}
+
+
+/* Styles the section headings. */
+.about-container h2 {
+    margin-top: 40px;
+
+    color: #4A1018;
+}
+
+
+/* Adds a small olive accent beneath
+   each About Me heading. */
+.about-container h2::after {
+    content: "";
+
+    display: block;
+
+    width: 45px;
+    height: 3px;
+
+    margin-top: 8px;
+
+    background-color: #59633A;
+}
+
+
+/* =========================================
+   SOCIAL LINKS
+   ========================================= */
+
+/* Uses Flexbox to place LinkedIn
+   and GitHub next to each other. */
+.links {
+    display: flex;
+
+    gap: 15px;
+
+    margin-top: 20px;
+}
+
+
+/* Styles the social links. */
+.links a {
+    padding: 10px 20px;
+
+    background-color: #292E1E;
+
+    color: #F1E8D8;
+
+    text-decoration: none;
+
+    border-radius: 3px;
+
+    font-weight: bold;
+}
+
+
+/* Changes social links when hovered over. */
+.links a:hover {
+    background-color: #650D1A;
+}
+
+
+/* =========================================
+   PROJECTS PAGE
+   ========================================= */
+
+/* Creates the main Projects page area. */
+.projects-container {
+    max-width: 1100px;
+
+    margin: 55px auto;
+
+    padding: 35px;
+}
+
+
+/* Main Projects heading. */
+.projects-container > h1 {
+    text-align: center;
+
+    color: #650D1A;
+
+    font-size: 42px;
+}
+
+
+/* Introduction underneath the heading. */
+.projects-intro {
+    max-width: 700px;
+
+    margin: 0 auto 45px;
+
+    text-align: center;
+
+    color: #4A3027;
+}
+
+
+/* =========================================
+   PROJECT FLEXBOX LAYOUT
+   ========================================= */
+
+/* Uses Flexbox to organize the project
+   cards across the page. */
+.project-list {
+    display: flex;
+
+    /* Allows cards to move to another
+       row when the screen is smaller. */
+    flex-wrap: wrap;
+
+    /* Creates space between the cards. */
+    gap: 25px;
+
+    /* Centers the cards. */
+    justify-content: center;
+}
+
+
+/* Individual project cards. */
+.project-card {
+    /* Allows cards to share available space. */
+    flex: 1;
+
+    /* Prevents cards from becoming too narrow. */
+    min-width: 250px;
+
+    padding: 28px;
+
+    background-color: #FAF7F0;
+
+    border: 1px solid #C8B88A;
+
+    border-radius: 4px;
+
+    box-shadow: 0 5px 12px rgba(41, 46, 30, 0.12);
+}
+
+
+/* Project titles. */
+.project-card h2 {
+    color: #4A1018;
+
+    margin-top: 0;
+}
+
+
+/* Skills & Focus headings. */
+.project-card h3 {
+    margin-top: 25px;
+
+    color: #59633A;
+}
+
+
+/* Adds a small olive line underneath
+   the Skills & Focus heading. */
+.project-card h3::after {
+    content: "";
+
+    display: block;
+
+    width: 35px;
+    height: 3px;
+
+    margin-top: 7px;
+
+    background-color: #650D1A;
+}
+
+
+/* =========================================
+   RESPONSIVE DESIGN
+   ========================================= */
+
+/* Adjusts the website for smaller screens. */
+@media (max-width: 700px) {
+
+    /* Stacks the navigation elements. */
+    .navbar {
+        flex-direction: column;
+
+        gap: 15px;
+
+        padding: 20px;
+    }
+
+
+    /* Allows navigation links to wrap. */
+    .nav-links {
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+
+    /* Reduces spacing around the pages. */
+    .home-container,
+    .about-container,
+    .projects-container {
+        margin: 20px;
+
+        padding: 25px;
+    }
+
+
+    /* Reduces the hero section padding. */
+    .hero {
+        padding: 30px;
+    }
+
+
+    /* Makes the main heading smaller. */
+    .hero-text h1 {
+        font-size: 38px;
+    }
+
+
+    /* Stacks the project cards. */
+    .project-list {
+        flex-direction: column;
+    }
+
+
+    /* Stacks the social links. */
+    .links {
+        flex-direction: column;
+    }
+}
